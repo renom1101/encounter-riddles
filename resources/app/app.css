@@ -1,0 +1,43 @@
+.float-right {
+  float: right;
+}
+
+.margin-top-xs {
+  margin-top: 5px;
+}
+
+.margin-bottom-xs {
+  margin-bottom: 5px;
+}
+
+.margin-left-xs {
+  margin-left: 5px;
+}
+
+.margin-right-xs {
+  margin-right: 5px;
+}
+
+.margin-top-sm {
+  margin-top: 20px;
+}
+
+.margin-bottom-sm {
+  margin-bottom: 20px;
+}
+
+.margin-left-sm {
+  margin-left: 20px;
+}
+
+.margin-right-sm {
+  margin-right: 20px;
+}
+
+.margin-top-md {
+  margin-top: 30px;
+}
+
+.padding-left-sm {
+  padding-left: 20px;
+}

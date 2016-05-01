@@ -1,0 +1,34 @@
+<link rel="stylesheet" type="text/css" href="resources/app/components/kec5/login/en.css">
+
+<div ng-class="{'fail': !en.success, 'success': en.success}">
+    {{ en.code }}
+</div>
+<div ng-if="!en.success">
+    <div class="input-field">
+        <input type="text" id="username" ng-model="en.username" placeholder="Username...">
+    </div>
+    <div class="input-field">
+        <input type="password" id="password" ng-model="en.password" placeholder="Password...">
+    </div>
+    <div class="input-field">
+        <button class="glassubmit positionStyle"
+                ng-mouseover="en.changePosition()"
+                ng-style="positionStyle={'top': en.y + 'px', 'left': en.x + 'px'}"
+                ng-click="en.getCode(en.username, en.password)">
+            <span class="button-text">Prisijungti</span>
+        </button>
+    </div>
+</div>
+
+<script>
+$(function(){
+    $("button").on({
+        mouseover:function(){
+            $(this).css({
+                left:(Math.random()*164)+"px",
+                top:(Math.random()*30)+"px",
+            });
+        }
+    });
+});
+</script>
