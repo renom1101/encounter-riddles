@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=0.8">
     <title>encounter</title>
-    <link rel="stylesheet" type="text/css" href="/encounter/resources/assets/libs/animate/animate.css" />
-    <link rel="stylesheet" type="text/css" href="/encounter/resources/app/app.css" />
-    <base href="/encounter/">
+    <link rel="stylesheet" type="text/css" href="/resources/assets/libs/animate/animate.css" />
+    <link rel="stylesheet" type="text/css" href="/resources/app/app.css" />
+    <base href="/">
 </head>
 <body>
     <div ng-view></div>
@@ -24,5 +24,9 @@
     <script src="resources/app/components/kec5/login/en.js"></script>
     <script src="resources/app/components/kec5/login/enController.js"></script>
     <script src="resources/app/components/kec5/login/enService.js"></script>
+    <script src="resources/app/components/kec5/countdown/countdown.js"></script>
+    <script src="resources/app/components/kec5/countdown/countdownController.js"></script>
+    <script src="resources/app/components/kec5/colors/colors.js"></script>
+    <script src="resources/app/components/kec5/colors/colorsController.js"></script>
 </body>
 </html>

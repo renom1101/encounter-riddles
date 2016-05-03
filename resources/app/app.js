@@ -14,5 +14,5 @@ angular.module('encounterApp').config(function($httpProvider, $routeProvider, $l
 
 	$locationProvider.html5Mode(true);
 
-	pathProvider.setBaseUrl('http://localhost/encounter/api/v1/');
+	pathProvider.setBaseUrl('http://encounter/vitare/api/v1/');
 });

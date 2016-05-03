@@ -1,0 +1,51 @@
+body {
+    font: 30px Verdana, Helvetica, sans-serif;
+}
+
+.brick {
+    width: 600px;
+    height: 100px;
+    background-color: rgb(0, 0, 0);
+}
+
+.brick1 {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 125, 125);
+}
+
+.brick2 {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(225, 0, 225);
+}
+
+.brick3 {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 0, 150);
+}
+
+.brick4 {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 0, 125);
+}
+
+.brick5 {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(50, 0, 50);
+}
+
+.brick6 {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 225, 225);
+}
