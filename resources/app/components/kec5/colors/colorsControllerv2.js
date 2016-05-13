@@ -3,13 +3,13 @@
 
   angular
     .module('encounterApp.kec5.colors')
-    .controller('ColorsController', colorsController);
+    .controller('ColorsControllerv2', colorsController);
 
     colorsController.$inject = [
         '$timeout'
     ];
 
-  function colorsController($timeout) {
+  function colorsController($timeout, $location) {
 
     var vm = this;
     vm.changeColor = changeColor;
@@ -75,7 +75,7 @@
       };
 
       function showHint() {
-        return vm.hints.indexOf(vm.counter) !== -1;
+        return true;
       };
   };
 

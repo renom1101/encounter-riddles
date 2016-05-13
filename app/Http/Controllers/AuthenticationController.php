@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\User;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use Mockery\CountValidator\Exception;
 
 class AuthenticationController extends Controller
 {
@@ -24,15 +25,24 @@ class AuthenticationController extends Controller
 
     public function login(Request $request)
     {
-        $username = $request->input('username');
         $password = $request->input('password');
 
-        $user = User::where('name', $username)->first();
-
-        if ($username == $user->name && $password == $user->password) {
-            return response()->json(['status' => 'OK']);
+        if (strlen($password) < 8) {
+            throw new Exception('FAIL');
         }
 
-        return response()->json(['status' => 'FAIL']);
+        if (!preg_match("#[0-9]+#", $password)) {
+            throw new Exception('FAIL');
+        }
+
+        if (!preg_match("#[a-zA-Z]+#", $password)) {
+            throw new Exception('FAIL');
+        }
+
+        if (!preg_match('/[\'\/~`\!@#\$%\^&\*\(\)_\-\+=\{\}\[\]\|;:"\<\>,\.\?\\\]/', $password)) {
+            throw new Exception('FAIL');
+        }
+
+        return response()->json(['status' => 'OK']);
     }
 }

@@ -1,14 +1,13 @@
 <link rel="stylesheet" type="text/css" href="resources/app/components/kec5/login/en.css">
 
 <div ng-class="{'fail': !en.success, 'success': en.success}">
-    {{ en.code }}
+    <div ng-if="!en.success">{{ en.code }}</div>
+    <div ng-if="en.success">Nesąžininga... Jūs neturėjot šito pamatyti...</div>
+    <div ng-if="en.success">Slaptas pranešimas - {{ en.code }}</div>
 </div>
 <div ng-if="!en.success">
     <div class="input-field">
-        <input type="text" id="username" ng-model="en.username" placeholder="Username...">
-    </div>
-    <div class="input-field">
-        <input type="password" id="password" ng-model="en.password" placeholder="Password...">
+        <input type="password" id="password" ng-model="en.password" placeholder="password...">
     </div>
     <div class="input-field">
         <button class="glassubmit positionStyle"

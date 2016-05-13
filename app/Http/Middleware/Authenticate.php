@@ -19,15 +19,24 @@ class Authenticate
      */
     public function handle($request, Closure $next, $guard = null)
     {
-        $username = $request->header('auth-username');
         $password = $request->header('auth-password');
 
-        $user = User::where('name', $username)->first();
-
-        if ($username == $user->name && $password == $user->password) {
-            return $next($request);
+        if (strlen($password) < 8) {
+            return response()->json(['status' => 'FAIL1']);
         }
 
-        return response()->json(['status' => 'FAIL']);
+        if (!preg_match("#[0-9]+#", $password)) {
+            return response()->json(['status' => 'FAIL2']);
+        }
+
+        if (!preg_match("#[a-zA-Z]+#", $password)) {
+            return response()->json(['status' => 'FAIL3']);
+        }
+
+        if (!preg_match('/[\'\/~`\!@#\$%\^&\*\(\)_\-\+=\{\}\[\]\|;:"\<\>,\.\?\\\]/', $password)) {
+            return response()->json(['status' => 'FAIL4']);
+        }
+
+        return $next($request);
     }
 }

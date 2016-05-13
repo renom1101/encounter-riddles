@@ -10,5 +10,10 @@ angular.module('encounterApp.kec5.countdown').config(['$routeProvider', function
     templateUrl: 'resources/app/components/kec5/countdown/countdown.html',
     controller: 'CountdownController as vm'
   });
+
+  $routeProvider.when('/kec5/countdown/v2', {
+    templateUrl: 'resources/app/components/kec5/countdown/countdown.html',
+    controller: 'CountdownControllerv2 as vm'
+  });
   
 }]);

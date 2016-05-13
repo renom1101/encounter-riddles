@@ -15,7 +15,9 @@ Route::get('/', function () { return view('index'); });
 Route::get('kec5', function () { return view('index'); });
 Route::get('kec5/login', function () { return view('index'); });
 Route::get('kec5/countdown', function () { return view('index'); });
+Route::get('kec5/countdown/v2', function () { return view('index'); });
 Route::get('kec5/colors', function () { return view('index'); });
+Route::get('kec5/colors/v2', function () { return view('index'); });
 
 
 Route::post('api/v1/users', 'AuthenticationController@login');

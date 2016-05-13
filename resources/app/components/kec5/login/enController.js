@@ -19,7 +19,8 @@
     vm.success = false;
 
     vm.x = 0;
-    vm.y = 100;
+    vm.y = 50;
+    vm.stage = 0;
 
     vm.getCode = function (username, password) {
       vm.userService.login(username, password)
@@ -38,7 +39,7 @@
 
             vm.enService.getCode()
                 .then(function (data) {
-                  vm.code = 'Šis tas naudingo - ' + data.code;
+                  vm.code = '' + data.code;
                   vm.success = true;
                 });
           }, function (error) {
@@ -48,8 +49,29 @@
     };
 
     vm.changePosition = function() {
-        vm.x = window.Math.random() * 500;
-        vm.y = window.Math.random() * 500;
+      vm.stage++;
+
+      if (vm.stage == 0) {
+        vm.x = 0;
+        vm.y = 50;
+      }
+
+      if (vm.stage == 1) {
+        vm.x = 300;
+      }
+
+      if (vm.stage == 2) {
+        vm.y = 350;
+      }
+
+      if (vm.stage == 3) {
+        vm.x = 0;
+      }
+
+      if (vm.stage == 4) {
+        vm.y = 650;
+        vm.stage = -1;
+      }
     };
 
   };

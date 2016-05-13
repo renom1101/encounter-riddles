@@ -17,7 +17,7 @@
 
     function countdown() {
         $timeout(function() {
-            var end = new Date(113415095460000);
+            var end = new Date(113415095490000);
             var now = new Date();
             var distance = end - now;
 

@@ -3,7 +3,7 @@ body {
 }
 
 .brick {
-    width: 600px;
+    width: 700px;
     height: 100px;
     background-color: rgb(0, 0, 0);
 }
@@ -47,5 +47,10 @@ body {
     float: left;
     width: 100px;
     height: 100px;
-    background-color: rgb(0, 225, 225);
+    background-color: rgb(175, 0, 0);
+}
+
+.number {
+    font-size: 75px;
+    margin-left: 45%;
 }

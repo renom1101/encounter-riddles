@@ -26,7 +26,9 @@
     <script src="resources/app/components/kec5/login/enService.js"></script>
     <script src="resources/app/components/kec5/countdown/countdown.js"></script>
     <script src="resources/app/components/kec5/countdown/countdownController.js"></script>
+    <script src="resources/app/components/kec5/countdown/countdownControllerv2.js"></script>
     <script src="resources/app/components/kec5/colors/colors.js"></script>
     <script src="resources/app/components/kec5/colors/colorsController.js"></script>
+    <script src="resources/app/components/kec5/colors/colorsControllerv2.js"></script>
 </body>
 </html>
