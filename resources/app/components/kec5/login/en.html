@@ -13,7 +13,9 @@
         <button class="glassubmit positionStyle"
                 ng-mouseover="en.changePosition()"
                 ng-style="positionStyle={'top': en.y + 'px', 'left': en.x + 'px'}"
-                ng-click="en.getCode(en.username, en.password)">
+                ng-click="en.getCode(en.username, en.password)"
+                ng-swipe-left="en.getCode(en.username, en.password)"
+                ng-swipe-right="en.getCode(en.username, en.password)">
             <span class="button-text">Prisijungti</span>
         </button>
     </div>

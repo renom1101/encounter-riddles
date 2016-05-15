@@ -2,7 +2,7 @@
 <html ng-app="encounterApp">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>encounter</title>
     <link rel="stylesheet" type="text/css" href="/resources/assets/libs/animate/animate.css" />
     <link rel="stylesheet" type="text/css" href="/resources/app/app.css" />
@@ -13,6 +13,7 @@
 
     <script src="resources/assets/libs/angular/angular.js"></script>
     <script src="resources/assets/libs/angular-route/angular-route.js"></script>
+    <script src="resources/assets/libs/angular-touch/angular-touch.js"></script>
 
     <script src="resources/app/app.js"></script>
     <script src="resources/app/components/main/main.js"></script>

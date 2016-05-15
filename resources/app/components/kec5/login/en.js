@@ -1,7 +1,8 @@
 'use strict';
 
 angular.module('encounterApp.kec5.login', [
-  'ngRoute'
+  'ngRoute',
+  'ngTouch'
 ]);
 
 angular.module('encounterApp.kec5.login').config(['$routeProvider', function($routeProvider) {

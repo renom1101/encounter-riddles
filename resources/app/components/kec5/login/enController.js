@@ -19,7 +19,7 @@
     vm.success = false;
 
     vm.x = 0;
-    vm.y = 50;
+    vm.y = 70;
     vm.stage = 0;
 
     vm.getCode = function (username, password) {
@@ -53,7 +53,7 @@
 
       if (vm.stage == 0) {
         vm.x = 0;
-        vm.y = 50;
+        vm.y = 70;
       }
 
       if (vm.stage == 1) {
