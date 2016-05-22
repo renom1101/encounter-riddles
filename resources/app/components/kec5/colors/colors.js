@@ -15,5 +15,10 @@ angular.module('encounterApp.kec5.colors').config(['$routeProvider', function($r
     templateUrl: 'resources/app/components/kec5/colors/colors.html',
     controller: 'ColorsControllerv2 as vm'
   });
+
+  $routeProvider.when('/kec5/colors/v3', {
+    templateUrl: 'resources/app/components/kec5/colors/colors.html',
+    controller: 'ColorsControllerv3 as vm'
+  });
   
 }]);
