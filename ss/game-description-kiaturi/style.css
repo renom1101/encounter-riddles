@@ -1,0 +1,134 @@
+@font-face {
+    font-family: andale-mono;
+    src: url(assets/fonts/andale-mono.ttf);
+}
+
+body {
+    text-align: center;
+    font-family: andale-mono;
+}
+
+.main-info {
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    width: 330px;
+}
+
+.items-list {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.title {
+    text-align: center;
+    color: #ffffff;
+    font-size: 21px;
+    margin: 10px 0 20px 0;
+}
+
+.date {
+    position: absolute;
+    top: 320px;
+    left: 270px;
+    text-align: left;
+    color: #a70011;
+    font-size: 40px;
+}
+
+.text {
+    text-align: left;
+    color: #ffffff;
+    font-size: 15px;
+    padding-left: 18px;
+    text-indent: -18px;
+}
+
+.leaned-text {
+    position: absolute;
+    top: 360px;
+    left: 0px;
+    width: 250px;
+    color: #c90011;
+    -ms-transform: rotate(-50deg); /* IE 9 */
+    -webkit-transform: rotate(-50deg); /* Safari */
+    transform: rotate(-50deg);
+}
+
+.image-container {
+    position: relative;
+    width: 900px;
+    height: 600px;
+    background-image: url('assets/images/original.jpg');
+    display: inline-block;
+}
+
+.flash {
+    position: absolute;
+    top: 482px;
+    left: 103px;
+    width: 28px;
+    height: 22px;
+}
+
+.confirm {
+	position: absolute;
+    width: 150px;
+    height: 150px;
+	top: 290px;
+    left: 270px;
+    background-image: url('assets/images/confirm.png');
+	visibility: hidden;
+}
+
+.mirror-box {
+    position: absolute;
+    bottom: 20px;
+    left: 250px;
+    width: 270px;
+    height: 117px;
+}
+
+.mirror-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.mirror-text {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 120px;
+    text-align: left;
+    font-size: 18px;
+    margin: 35px 0 0 0;
+    color: #ffffff;
+}
+
+.mirror {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 126px;
+    height: 117px;
+    background-image: url('assets/images/mirror.png');
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: 900;
+}
+
+.uv {
+}
+
+.red {
+    color: #a70011;
+}

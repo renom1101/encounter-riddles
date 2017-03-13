@@ -1,0 +1,68 @@
+@font-face {
+    font-family: andale-mono;
+    src: url(assets/fonts/andale-mono.ttf);
+}
+
+@font-face {
+    font-family: market-deco;
+    src: url(assets/fonts/market-deco.ttf);
+}
+
+body {
+    text-align: left;
+    font-family: andale-mono;
+}
+
+.image-container {
+    position: relative;
+    width: 696px;
+    height: 377px;
+    background-image: url('assets/images/background.png');
+    display: inline-block;
+}
+
+.character-container {
+    float: left;
+    width: 190px;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.character {
+    vertical-align: middle;
+    max-height: 377px;
+    max-width: 216px;
+    margin: auto;
+}
+
+.description-container {
+    float: left;
+    width: 500px;
+}
+
+.description-container-inner {
+    background-color: rgba(79, 117, 72, 0.7);
+    margin: 30px;
+    width: 435px;
+    height: 317px;
+    text-align: center;
+}
+
+.title {
+    color: #ffffff;
+    font-family: market-deco;
+    font-size: 30px;
+    padding: 15px 0 15px 0;
+}
+
+.text {
+    text-align: left;
+    color: #ffffff;
+    font-size: 15px;
+    padding-left: 28px;
+    text-indent: -18px;
+}
